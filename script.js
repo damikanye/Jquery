@@ -1,6 +1,8 @@
 $(document).ready(function(){
     $("button").click(function(){
-        $("#list").append('<li>Laptop</li>');
+        var newList= $("#textfield").val();
+        console.log(newList);
+        $("#list").append("<li>" + newList + "</li>");
     });
 });
 
